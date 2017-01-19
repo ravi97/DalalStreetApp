@@ -1,5 +1,6 @@
 package org.pragyan.dalalstreet17;
 
+import android.content.Intent;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -44,6 +45,8 @@ public class Login extends AppCompatActivity {
         if(validateEmail()){
             if(validatePassword()){
                 Toast.makeText(this, "authenticated", Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(this,Home.class);
+                startActivity(intent);
             }
 
         }

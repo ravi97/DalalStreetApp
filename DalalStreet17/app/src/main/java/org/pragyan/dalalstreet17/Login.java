@@ -46,6 +46,7 @@ public class Login extends AppCompatActivity {
             if(validatePassword()){
                 Toast.makeText(this, "authenticated", Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent(this,Home.class);
+                intent.putExtra("username",email.getText().toString());
                 startActivity(intent);
                 finish();
             }

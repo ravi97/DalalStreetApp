@@ -110,22 +110,22 @@ public class Home extends AppCompatActivity
                 fragment=new StockExchange();
                 break;
             case R.id.nav_mortgage:
-                Toast.makeText(this, "Mortgage", Toast.LENGTH_SHORT).show();
+                fragment=new Mortgage();
                 break;
             case R.id.nav_transactions:
-                Toast.makeText(this, "Transactions", Toast.LENGTH_SHORT).show();
+                fragment=new Transactions();
                 break;
             case R.id.nav_portfolio:
-                Toast.makeText(this, "Portfolio", Toast.LENGTH_SHORT).show();
+                fragment=new Portfolio();
                 break;
             case R.id.nav_news:
-                Toast.makeText(this, "News", Toast.LENGTH_SHORT).show();
+                fragment=new News();
                 break;
             case R.id.nav_performance:
-                Toast.makeText(this, "Performance", Toast.LENGTH_SHORT).show();
+                fragment=new Performance();
                 break;
             case  R.id.nav_depth:
-                Toast.makeText(this, "Market depth", Toast.LENGTH_SHORT).show();
+                fragment=new MarketDepth();
                 break;
         }
 

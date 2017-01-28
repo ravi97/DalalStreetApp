@@ -7,10 +7,12 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -86,10 +88,7 @@ public class Home extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    public void help(){
-        Toast.makeText(this, "you pressed help", Toast.LENGTH_SHORT).show();
-        //show help here
-    }
+
 
     public void logout(){
         Toast.makeText(this, "logged out", Toast.LENGTH_SHORT).show();
@@ -151,8 +150,17 @@ public class Home extends AppCompatActivity
         return true;
     }
 
-    public void manual(){
-        
+    public void help(){
+        LayoutInflater inflater= LayoutInflater.from(this);
+        View view=inflater.inflate(R.layout.help_box, null);
+        View view2=inflater.inflate(R.layout.help_title,null);
+
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
+        alertDialog.setCustomTitle(view2);
+        alertDialog.setView(view);
+        alertDialog.setCancelable(true);
+        AlertDialog alert = alertDialog.create();
+        alert.show();
     }
 
 

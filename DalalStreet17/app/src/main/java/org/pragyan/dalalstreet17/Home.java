@@ -5,6 +5,8 @@ import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -27,12 +29,6 @@ import java.util.List;
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    RecyclerView recyclerView;
-    CompanyAdapter adapter;
-    List<Company> companyList;
-
-    TextView username,cashWorth,stockWorth;
-    String cash,stock;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,27 +36,6 @@ public class Home extends AppCompatActivity
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        username=(TextView)findViewById(R.id.name_display);
-        cashWorth=(TextView)findViewById(R.id.cash_worth);
-        stockWorth=(TextView)findViewById(R.id.stock_worth);
-
-        Intent i=getIntent();
-        username.setText("Welcome "+i.getStringExtra("username")+" !");
-
-        cash="500";  //hardcoded
-        stock="250"; //hardcoded
-        cashWorth.setText("Cash worth : "+cash);
-        stockWorth.setText("Stock worth :"+stock);
-
-        recyclerView=(RecyclerView)findViewById(R.id.recycler_view);
-        companyList=new ArrayList<>();
-        prepareCompany();
-        adapter= new CompanyAdapter(this,companyList);
-
-        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(adapter);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -70,6 +45,8 @@ public class Home extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        displaySelectedScreen(R.id.nav_home);
     }
 
     @Override
@@ -121,15 +98,17 @@ public class Home extends AppCompatActivity
         finish();
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
-    @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
+    public void displaySelectedScreen(int id){
+
+        Fragment fragment=null;
+
 
         switch (id) {
+            case R.id.nav_home:
+                fragment=new Companies();
+                break;
             case R.id.nav_exchange:
-                Toast.makeText(this, "stock exchange", Toast.LENGTH_SHORT).show();
+                fragment=new StockExchange();
                 break;
             case R.id.nav_mortgage:
                 Toast.makeText(this, "Mortgage", Toast.LENGTH_SHORT).show();
@@ -151,21 +130,32 @@ public class Home extends AppCompatActivity
                 break;
         }
 
+        if (fragment != null) {
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.content_home, fragment);
+            ft.commit();
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
+
+    }
+
+    @SuppressWarnings("StatementWithEmptyBody")
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        // Handle navigation view item clicks here.
+
+        displaySelectedScreen(item.getItemId());
+
         return true;
     }
 
-
-    public void prepareCompany(){
-        companyList.add(new Company("Github",String.valueOf(50),R.drawable.github2,R.drawable.down_arrow));
-        companyList.add(new Company("Apple",String.valueOf(100),R.drawable.apple,R.drawable.up_arrow));
-        companyList.add(new Company("Yahoo",String.valueOf(125),R.drawable.yahoo2,R.drawable.down_arrow));
-        companyList.add(new Company("HDFC",String.valueOf(95),R.drawable.hdfc3,R.drawable.down_arrow));
-        companyList.add(new Company("lg",String.valueOf(110),R.drawable.lg2,R.drawable.up_arrow));
-        companyList.add(new Company("Sony",String.valueOf(50),R.drawable.sony,R.drawable.down_arrow));
-        companyList.add(new Company("Infosys",String.valueOf(50),R.drawable.infosys,R.drawable.down_arrow));
+    public void manual(){
+        
     }
+
+
+
 
 }

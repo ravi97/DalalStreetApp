@@ -16,7 +16,8 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:id="@+id/name_display" />
+            android:id="@+id/name_display"
+            android:textSize="20sp"/>
 
         <TextView
             android:text="Cash worth : "
@@ -25,7 +26,8 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:id="@+id/cash_worth" />
+            android:id="@+id/cash_worth"
+            android:textSize="20sp"/>
 
         <TextView
             android:text="Stock worth :"
@@ -34,7 +36,8 @@
             android:id="@+id/stock_worth"
             android:layout_below="@+id/cash_worth"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"/>
 
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"

@@ -26,8 +26,7 @@ public class Mortgage extends Fragment {
 
 
     MaterialBetterSpinner materialBetterSpinner;
-    RadioGroup radioGroup;
-    RadioButton radioButton,defaultButton;
+    RadioButton defaultButton;
     Button mortgageButton;
     EditText stocks;
     TextInputLayout stock_input;
@@ -65,7 +64,7 @@ public class Mortgage extends Fragment {
         mortgaged.setText("Number of stocks in mortgage : "+String.valueOf(stocks_mortgaged));
 
 
-        radioGroup=(RadioGroup)rootView.findViewById(R.id.radioGroup);
+
 
         defaultButton=(RadioButton)rootView.findViewById(R.id.radioButton_sell);
         defaultButton.setChecked(true);
@@ -75,7 +74,7 @@ public class Mortgage extends Fragment {
             @Override
             public void onClick(View view) {
 
-                radioButton=(RadioButton)rootView.findViewById(radioGroup.getCheckedRadioButtonId());
+
 
                 if(stocks.getText().toString().trim().isEmpty()) {
                     stock_input.setError("enter the number of stocks");
@@ -88,7 +87,7 @@ public class Mortgage extends Fragment {
                     }
                     else {
                         stock_transaction=Integer.parseInt(stocks.getText().toString());
-                        if(radioButton.getText().toString().equals("Sell stocks to mortgage")){
+                        if(defaultButton.isChecked()){
 
                             if(stock_transaction<=stocks_owned) {
                                 stocks_owned -= stock_transaction;

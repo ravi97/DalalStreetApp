@@ -20,6 +20,9 @@ public class StockExchange extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+        getActivity().setTitle("Stock Exchange");
+
         return inflater.inflate(R.layout.fragment_stock_exchange, container, false);
     }
 

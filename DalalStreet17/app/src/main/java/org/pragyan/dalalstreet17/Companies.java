@@ -63,6 +63,8 @@ public class Companies extends Fragment {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
 
+        getActivity().setTitle("Home");
+
         return rootView;
     }
 

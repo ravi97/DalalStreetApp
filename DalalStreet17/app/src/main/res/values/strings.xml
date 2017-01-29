@@ -13,6 +13,15 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="companies">
+        <item>Github</item>
+        <item>Apple</item>
+        <item>Yahoo</item>
+        <item>HDFC</item>
+        <item>LG</item>
+        <item>Sony</item>
+        <item>Infosys</item>
+    </string-array>
     <string name="help">
         Dalal street is a virtual stock exchange game, where the companies sell their stocks to the public at a price
         \nwhich depends on the company market value and performance.

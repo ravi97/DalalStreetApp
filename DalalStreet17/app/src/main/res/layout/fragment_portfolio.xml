@@ -4,10 +4,143 @@
     android:layout_height="match_parent"
     tools:context="org.pragyan.dalalstreet17.Portfolio">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:text="Player profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textSize="35sp"
+            android:id="@+id/player_profile" />
+
+        <TextView
+            android:text="Money available : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/player_profile"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:textSize="20sp"
+            android:id="@+id/money" />
+
+        <TextView
+            android:text="Wealth through stocks :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/money"
+            android:layout_alignLeft="@+id/money"
+            android:layout_alignStart="@+id/money"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:id="@+id/stock_wealth" />
+
+        <TextView
+            android:text="Total wealth :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stock_wealth"
+            android:layout_alignLeft="@+id/stock_wealth"
+            android:layout_alignStart="@+id/stock_wealth"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:id="@+id/total" />
+
+        <TextView
+            android:text="Stock details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:id="@+id/stock_details" />
+
+        <TextView
+            android:text="Github"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stock_details"
+            android:layout_alignLeft="@+id/total"
+            android:layout_alignStart="@+id/total"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:id="@+id/github" />
+        <TextView
+            android:text="Apple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/github"
+            android:layout_alignLeft="@+id/total"
+            android:layout_alignStart="@+id/total"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:id="@+id/apple" />
+        <TextView
+            android:text="Yahoo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/apple"
+            android:layout_alignLeft="@+id/total"
+            android:layout_alignStart="@+id/total"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:id="@+id/yahoo" />
+        <TextView
+            android:text="HDFC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yahoo"
+            android:layout_alignLeft="@+id/total"
+            android:layout_alignStart="@+id/total"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:id="@+id/hdfc" />
+        <TextView
+            android:text="LG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hdfc"
+            android:layout_alignLeft="@+id/total"
+            android:layout_alignStart="@+id/total"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:id="@+id/lg" />
+        <TextView
+            android:text="Sony"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lg"
+            android:layout_alignLeft="@+id/total"
+            android:layout_alignStart="@+id/total"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:id="@+id/sony" />
+
+        <TextView
+            android:text="Infosys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sony"
+            android:layout_alignLeft="@+id/total"
+            android:layout_alignStart="@+id/total"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:id="@+id/infosys" />
+
+
+    </RelativeLayout>
 
 </FrameLayout>

@@ -22,6 +22,11 @@
         <item>Sony</item>
         <item>Infosys</item>
     </string-array>
+    <string-array name="orders">
+        <item>Marker order</item>
+        <item>Stoploss order</item>
+        <item>Limit order</item>
+    </string-array>
     <string name="help">
         Dalal street is a virtual stock exchange game, where the companies sell their stocks to the public at a price
         \nwhich depends on the company market value and performance.

@@ -21,16 +21,9 @@ import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
 public class StockExchange extends Fragment {
 
-    MaterialBetterSpinner materialBetterSpinner;
-    TextView stockPrice;
-    RadioButton defultButton;
-    TextInputLayout noOfStocksInput,minimumInput,stoplossInput;
-    EditText noOfStocks,minimum,stoploss;
-    Button bidOrAsk;
 
     int github_value,apple_value,yahoo_value,hdfc_value,lg_value,sony_value,infosys_value;;
 
-    int stockNumber,stoplossNumber,minOrMax;
 
     public StockExchange() {
 
@@ -56,66 +49,9 @@ public class StockExchange extends Fragment {
         getActivity().setTitle("Stock Exchange");
 
 
-        materialBetterSpinner=(MaterialBetterSpinner)rootView.findViewById(R.id.stock_exchange_spinner);
-        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(getActivity(),android.R.layout.simple_dropdown_item_1line,getResources().getStringArray(R.array.companies));
-        materialBetterSpinner.setAdapter(arrayAdapter);
-
-        bidOrAsk=(Button)rootView.findViewById(R.id.bid_ask);
-
-        noOfStocks=(EditText)rootView.findViewById(R.id.no_of_stocks);
-        minimum=(EditText)rootView.findViewById(R.id.minimum);
-        stoploss=(EditText)rootView.findViewById(R.id.stoploss);
-
-        noOfStocksInput=(TextInputLayout)rootView.findViewById(R.id.no_of_stocks_input);
-        minimumInput=(TextInputLayout)rootView.findViewById(R.id.minimum_input);
-        stoplossInput=(TextInputLayout)rootView.findViewById(R.id.stoploss_input);
-
-        defultButton=(RadioButton)rootView.findViewById(R.id.radioButton_bid);
-        defultButton.setChecked(true);
-
-        defultButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(b){
-                    bidOrAsk.setText("Bid");
-                }
-                else{
-                    bidOrAsk.setText("Ask");
-
-                }
-            }
-        });
 
 
 
-        bidOrAsk.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(materialBetterSpinner.getText().toString().trim().isEmpty()){
-                    Toast.makeText(getActivity(), "select a company", Toast.LENGTH_SHORT).show();
-                }
-                else if(noOfStocks.getText().toString().trim().isEmpty()){
-                    noOfStocksInput.setError("enter the number of stocks");
-                }
-                else if (minimum.getText().toString().trim().isEmpty()){
-                    noOfStocksInput.setErrorEnabled(false);
-                    if(defultButton.isChecked())
-                        minimumInput.setError("enter the bid value");
-                    else
-                        minimumInput.setError("enter the ask value");
-                }
-                else if(stoploss.getText().toString().trim().isEmpty()){
-                    minimumInput.setErrorEnabled(false);
-                    stoplossInput.setError("enter the stoploss order");
-                }
-                else{
-                    stoplossInput.setErrorEnabled(false);
-                    Toast.makeText(getActivity(), "transaction added", Toast.LENGTH_SHORT).show();
-                }
-
-
-            }
-        });
 
         return rootView;
     }

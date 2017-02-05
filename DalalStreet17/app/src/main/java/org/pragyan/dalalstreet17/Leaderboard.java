@@ -24,6 +24,7 @@ public class Leaderboard extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView=inflater.inflate(R.layout.fragment_leaderboard, container, false);
+        getActivity().setTitle("Leaderboard");
         return rootView;
     }
 

@@ -109,8 +109,20 @@ public class Home extends AppCompatActivity
             case R.id.nav_exchange:
                 fragment=new StockExchange();
                 break;
+            case R.id.nav_company_profile:
+                fragment=new CompanyProfile();
+                break;
+            case R.id.nav_news:
+                fragment=new News();
+                break;
+            case R.id.nav_buy_sell:
+                fragment=new BuySell();
+                break;
             case R.id.nav_mortgage:
                 fragment=new Mortgage();
+                break;
+            case R.id.nav_my_orders:
+                fragment=new MyOrders();
                 break;
             case R.id.nav_transactions:
                 fragment=new Transactions();
@@ -118,15 +130,10 @@ public class Home extends AppCompatActivity
             case R.id.nav_portfolio:
                 fragment=new Portfolio();
                 break;
-            case R.id.nav_news:
-                fragment=new News();
+            case R.id.nav_leaderboard:
+                fragment=new Leaderboard();
                 break;
-            case R.id.nav_performance:
-                fragment=new Performance();
-                break;
-            case  R.id.nav_depth:
-                fragment=new MarketDepth();
-                break;
+
         }
 
         if (fragment != null) {

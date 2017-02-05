@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MarketDepth extends Fragment {
+public class BuySell extends Fragment {
 
 
-    public MarketDepth() {
+    public BuySell() {
         // Required empty public constructor
     }
 
@@ -23,9 +23,10 @@ public class MarketDepth extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        View rootView= inflater.inflate(R.layout.fragment_buy_sell, container, false);
+        getActivity().setTitle("Buy / Sell");
 
-        getActivity().setTitle("Market depth");
-        return inflater.inflate(R.layout.fragment_market_depth, container, false);
+        return rootView;
     }
 
 }

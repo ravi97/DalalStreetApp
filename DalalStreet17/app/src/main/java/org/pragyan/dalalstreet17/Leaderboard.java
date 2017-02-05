@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Performance extends Fragment {
+public class Leaderboard extends Fragment {
 
 
-    public Performance() {
+    public Leaderboard() {
         // Required empty public constructor
     }
 
@@ -23,10 +23,8 @@ public class Performance extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
-        getActivity().setTitle("Performance");
-
-        return inflater.inflate(R.layout.fragment_performance, container, false);
+        View rootView=inflater.inflate(R.layout.fragment_leaderboard, container, false);
+        return rootView;
     }
 
 }

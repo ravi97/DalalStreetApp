@@ -1,12 +1,18 @@
 package org.pragyan.dalalstreet17;
 
 
+import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 
 /**
@@ -14,7 +20,11 @@ import android.widget.TextView;
  */
 public class Portfolio extends Fragment {
 
-    TextView money,stock,total,github,apple,yahoo,hdfc,lg,sony,infosys;
+    ListView listView;
+
+    ArrayList<String> stock_details;
+
+    TextView money,stock,total;
     int money_cash,money_stock,money_total,stock_github,stock_apple,stock_yahoo,stock_hdfc,stock_lg,stock_sony,stock_infosys;
     int github_value,apple_value,yahoo_value,hdfc_value,lg_value,sony_value,infosys_value;
 
@@ -57,25 +67,26 @@ public class Portfolio extends Fragment {
         stock=(TextView)rootView.findViewById(R.id.stock_wealth);
         total=(TextView)rootView.findViewById(R.id.total);
 
-        github=(TextView)rootView.findViewById(R.id.github);
-        apple=(TextView)rootView.findViewById(R.id.apple);
-        yahoo=(TextView)rootView.findViewById(R.id.yahoo);
-        hdfc=(TextView)rootView.findViewById(R.id.hdfc);
-        lg=(TextView)rootView.findViewById(R.id.lg);
-        sony=(TextView)rootView.findViewById(R.id.sony);
-        infosys=(TextView)rootView.findViewById(R.id.infosys);
 
         money.setText("Money available : "+money_cash);
         stock.setText("Wealth through stocks : "+money_stock);
         total.setText("Total wealth : "+money_total);
 
-        github.setText("Github : "+stock_github+" ("+github_value+" per stock)");
-        apple.setText("Apple : "+stock_apple+" ("+apple_value+" per stock)");
-        yahoo.setText("Yahoo : "+stock_yahoo+" ("+yahoo_value+" per stock)");
-        hdfc.setText("HDFC : "+stock_hdfc+" ("+hdfc_value+" per stock)");
-        lg.setText("LG : "+stock_lg+" ("+lg_value+" per stock)");
-        sony.setText("Sony : "+stock_sony+" ("+sony_value+" per stock)");
-        infosys.setText("Infosys : "+stock_infosys+" ("+infosys_value+" per stock)");
+
+        listView=(ListView)rootView.findViewById(R.id.stock_details_listview);
+        stock_details=new ArrayList<String>();
+        stock_details.add("Github : "+stock_github+" ("+github_value+" per stock)");
+        stock_details.add("Apple : "+stock_apple+" ("+apple_value+" per stock)");
+        stock_details.add("Yahoo : "+stock_yahoo+" ("+yahoo_value+" per stock)");
+        stock_details.add("HDFC : "+stock_hdfc+" ("+hdfc_value+" per stock)");
+        stock_details.add("LG : "+stock_lg+" ("+lg_value+" per stock)");
+        stock_details.add("Sony : "+stock_sony+" ("+sony_value+" per stock)");
+        stock_details.add("Infosys : "+stock_infosys+" ("+infosys_value+" per stock)");
+
+        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1,stock_details);
+        listView.setAdapter(arrayAdapter);
+
+
 
 
 

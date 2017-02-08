@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_orders.png",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-mdpi/ic_action_orders.png"
+    },
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_performance.png",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-mdpi/ic_action_performance.png"
+    },
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_leaderboard.png",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-mdpi/ic_action_leaderboard.png"
+    },
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-mdpi/logout.png",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-mdpi/logout.png"
+    },
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_transactions.png",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-mdpi/ic_action_transactions.png"
+    },
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_expand_more_black_18dp.png",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.weiwangcn.betterspinner/library-material/1.1.0/res/drawable-mdpi/ic_expand_more_black_18dp.png"
+    },
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-mdpi/up_arrow.png",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-mdpi/up_arrow.png"
+    },
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_news.png",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-mdpi/ic_action_news.png"
+    },
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_exchange.png",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-mdpi/ic_action_exchange.png"
+    },
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-mdpi/help.png",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-mdpi/help.png"
+    },
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-mdpi/down_arrow.png",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-mdpi/down_arrow.png"
+    },
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_portfolio.png",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-mdpi/ic_action_portfolio.png"
+    },
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_mortgage.png",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-mdpi/ic_action_mortgage.png"
+    },
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_company.png",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-mdpi/ic_action_company.png"
+    },
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_home.png",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-mdpi/ic_action_home.png"
+    }
+]

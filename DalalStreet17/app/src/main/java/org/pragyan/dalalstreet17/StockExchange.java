@@ -62,7 +62,7 @@ public class StockExchange extends Fragment {
         companySpinner.setAdapter(arrayAdapter);
 
         buy=(Button)rootView.findViewById(R.id.buy_exchange);
-        stockValue=(TextView)rootView.findViewById(R.id.stock_price);
+        stockValue=(TextView)rootView.findViewById(R.id.stock_price_current);
 
         noOfStocks=(EditText)rootView.findViewById(R.id.stocks_exchange);
         noOfStocksInput=(TextInputLayout)rootView.findViewById(R.id.stocks_exchange_input);

@@ -50,6 +50,8 @@ public class CompanyAdapter extends RecyclerView.Adapter<CompanyAdapter.MyViewHo
         return companyList.size();
     }
 
+
+
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView name,worth;
         public ImageView company_image,status;

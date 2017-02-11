@@ -75,7 +75,8 @@
             android:layout_alignLeft="@+id/stock_details"
             android:layout_alignStart="@+id/stock_details"
             android:layout_marginTop="30dp"
-            android:id="@+id/stock_details_listview"/>
+            android:id="@+id/stock_details_listview"
+            android:divider="@android:color/transparent"/>
 
 
     </RelativeLayout>

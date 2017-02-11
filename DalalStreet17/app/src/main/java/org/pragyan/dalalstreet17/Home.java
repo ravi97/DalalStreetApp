@@ -31,6 +31,9 @@ import java.util.List;
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    TextView username;
+    String name;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +51,14 @@ public class Home extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        View headView=navigationView.inflateHeaderView(R.layout.nav_header_home);
+
         displaySelectedScreen(R.id.nav_home);
+
+        name="username";
+
+        username=(TextView)headView.findViewById(R.id.username);
+        username.setText(name);
     }
 
     @Override

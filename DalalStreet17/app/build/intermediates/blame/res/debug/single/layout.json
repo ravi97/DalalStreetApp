@@ -24,12 +24,12 @@
         "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/abc_search_view.xml"
-    },
-    {
         "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
         "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/abc_search_view.xml"
     },
     {
         "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_custom.xml",
@@ -62,6 +62,10 @@
     {
         "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
         "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/layout/abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/layout/user_wealth.xml",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/layout/user_wealth.xml"
     },
     {
         "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/layout/notification_template_custom_big.xml",
@@ -210,6 +214,10 @@
     {
         "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/layout/nav_header_home.xml",
         "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/layout/nav_header_home.xml"
+    },
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/layout/leaderboard_list.xml",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/layout/leaderboard_list.xml"
     },
     {
         "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",

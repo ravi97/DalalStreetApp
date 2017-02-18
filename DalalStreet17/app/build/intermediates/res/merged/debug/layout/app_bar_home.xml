@@ -33,7 +33,8 @@
 
 
             <include
-                layout="@layout/user_wealth" />
+                layout="@layout/user_wealth"
+                android:id="@+id/wealth"/>
             <include layout="@layout/content_home" />
 
 

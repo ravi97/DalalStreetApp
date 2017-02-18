@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ds.jpg",
+        "source": "/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/mipmap-hdpi/ds.jpg"
+    },
+    {
         "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ds.jpg",
         "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/mipmap-hdpi/ds.jpg"
     }

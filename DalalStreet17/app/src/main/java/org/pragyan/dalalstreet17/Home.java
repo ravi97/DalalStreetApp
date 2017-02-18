@@ -2,6 +2,7 @@ package org.pragyan.dalalstreet17;
 
 import android.content.Intent;
 import android.graphics.Rect;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +13,14 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.AbsoluteSizeSpan;
+import android.text.style.RelativeSizeSpan;
+import android.text.style.StyleSpan;
+import android.text.style.TypefaceSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -33,6 +42,10 @@ public class Home extends AppCompatActivity
 
     TextView username;
     String name;
+
+    TextView stock, cash, total;
+    int stockWorth, cashWorth, totalWorth;
+
 
 
     @Override
@@ -59,6 +72,44 @@ public class Home extends AppCompatActivity
 
         username=(TextView)headView.findViewById(R.id.username);
         username.setText(name);
+
+        cashWorth=1500;
+        stockWorth=2000;
+        totalWorth=3500;
+
+        stock=(TextView)findViewById(R.id.user_stock_worth);
+        cash=(TextView)findViewById(R.id.user_cash_worth);
+        total=(TextView)findViewById(R.id.user_total_worth);
+
+        String stockText="Stock worth\n"+String.valueOf(stockWorth);
+        String cashText="Cash worth\n"+String.valueOf(cashWorth);
+        String totalText="Total worth\n"+String.valueOf(totalWorth);
+/*
+        stock.setText(stockText);
+        cash.setText(cashText);
+        total.setText(totalText);
+        */
+
+
+        SpannableString spannable1=new SpannableString(stockText);
+        spannable1.setSpan(new StyleSpan(Typeface.BOLD),12,stockText.length(),Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spannable1.setSpan(new RelativeSizeSpan(0.8f), 0, 11,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spannable1.setSpan(new RelativeSizeSpan(2.0f),12,stockText.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        stock.setText(spannable1);
+
+        SpannableString spannable2=new SpannableString(cashText);
+        spannable2.setSpan(new StyleSpan(Typeface.BOLD),11,cashText.length(),Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spannable2.setSpan(new RelativeSizeSpan(0.8f),0,10,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spannable2.setSpan(new RelativeSizeSpan(2.0f),11,cashText.length(),Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        cash.setText(spannable2);
+
+        SpannableString spannable3=new SpannableString(totalText);
+        spannable3.setSpan(new StyleSpan(Typeface.BOLD),12,totalText.length(),Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spannable3.setSpan(new RelativeSizeSpan(0.8f), 0,11,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spannable3.setSpan(new RelativeSizeSpan(2.0f),12,totalText.length(),Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        total.setText(spannable3);
+
+
     }
 
     @Override

@@ -3,138 +3,93 @@
 
     <item
         is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.1_c29780c8e5e0bf05e7fa3a1eb689b5ed02d13caa.jar" />
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.1_4e0deebe47d061d88e3593dc9ae53ee629c57156.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_8a80bf3121c6422af9397c7ff79684b906f08de1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.1_50f34aa2e9008fc3b6551c528f1e56253503e13f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_86148a264cb9927bf3292417462573eb5fe2662e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.rengwuxian.materialedittext/library/2.0.3/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="052802ed198178e7133de387fbc87d3f2998482a">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.rengwuxian.materialedittext-library-2.0.3_b7622c7b73fef9e404a667286e8f607483bfdded.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.0.1_b391836796f326c4c27726d58894961a156811db.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_b831b4241c522caef6567ba54d3f286c973086f6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.0.1_6100c1b91e35ae5ec452342b24514660c0df4401.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_d82a37d35398e2670422bce9919218dd0b8f79b7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.weiwangcn.betterspinner/library-material/1.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8d8c5463a1a50691e2cf66cd7ce4751c8545b584">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.weiwangcn.betterspinner-library-material-1.1.0_1fa7a967c6ceaa9daada17cc33cbd59035e60481.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_3157fc22edc350da1531bd89a028eda82f5bb1c1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_49d201d3dadb43d247fb1e9a1070d3d4ba71c0f0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_56c9fa6f72234752d8f501e8f717a1761ca1212c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_9113e606693f7d383f0aecfd95ed192b9e3ae6c1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_e87a44b7e8084307fe1f3e2418950a871499fa53.jar" />
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_ca975ce52d0cd764c6cf6c1b8e7be869ae07aaf1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.0.1_34d4712b664064c4da33d2e4e334843899363058.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_8eb23cddd8b7d6696a57b8c05e25e00c52baa4ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.0.1_c2f6d1d2bd80892faf9451b291572ae7c16d4493.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_2bceb81582feffaa3c4c5e188ebbffaf113be67c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_282b7af47aa1725b7ab68a8d461559a85630faa2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_7ee74713de79bf8bad3052cbb8039affd4e4fbdd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_5c719176cfbf5f7504dcf59bcc4eba1f6ca341b0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_68c715b0de54c79fe22130205173a20dc68ebfc9.jar" />
     </item>
     <item
         is-multidex="false"
@@ -143,52 +98,34 @@
         optimize="true"
         revision="25.0.2"
         sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/library-2.4.0_1ed0b9e6e625264a7154e0e80928cccd7316c489.jar" />
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/library-2.4.0_1ed0b9e6e625264a7154e0e80928cccd7316c489.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.1_969f4d7d600471d63774da4c845f128b1aaa205e.jar" />
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_ae37488f932c5775cc67fef22ffc168140d5bb3d.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.1_5c28db8409b61ffe88230b476a3a9eed02a8f7d7.jar" />
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_0f9bdc01e2fa41de7b550b80481632cb646bbfbc.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.weiwangcn.betterspinner/library-material/1.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_d83b5c5ea92931bafd93a73a39173391c698fe66.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_cc72480f4755d8352457a6558e8dc6c297b4be84.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_a5bfebb0a82c1b91e817f1a38bacbfb0ffafc3ed.jar" />
+        sha1="8d8c5463a1a50691e2cf66cd7ce4751c8545b584">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.weiwangcn.betterspinner-library-material-1.1.0_f3b6d6d6b37658806f46f7e5498328c0929d27dd.jar" />
     </item>
     <item
         is-multidex="false"
@@ -197,7 +134,7 @@
         optimize="true"
         revision="25.0.2"
         sha1="d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/picasso-2.3.2_8b71de691ad046a117157e19b8a6a941b3c79c1f.jar" />
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/picasso-2.3.2_8b71de691ad046a117157e19b8a6a941b3c79c1f.jar" />
     </item>
     <item
         is-multidex="false"
@@ -206,7 +143,70 @@
         optimize="true"
         revision="25.0.2"
         sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_89e546303a87fb7b66b7ba0b53fd7a5dfc8c0a06.jar" />
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_89e546303a87fb7b66b7ba0b53fd7a5dfc8c0a06.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.1_773771c59bf080fa7e1f0037cc1500494595a90b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.rengwuxian.materialedittext/library/2.0.3/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052802ed198178e7133de387fbc87d3f2998482a">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.rengwuxian.materialedittext-library-2.0.3_dcc55119a8acc2e9c9d3621213f399b4d75f5dca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.1_4a5fcd85aa5271b62035ee7aa4b669c77a73a3db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_6ea798c7ef669fab94e9cf917c92ebb46782bc77.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.1_32f9e272f8674f4f76b7561438d4589e32f68080.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_d3db6042cf8fa314d543851c5fd6fce3031eeed5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_8f5c3b91b4ad1fd743b4d3313164c83b8e99b1b8.jar" />
     </item>
 
 </items>

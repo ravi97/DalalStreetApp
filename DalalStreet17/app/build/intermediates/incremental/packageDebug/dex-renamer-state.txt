@@ -1,4 +1,4 @@
-#Sat Feb 11 17:00:50 IST 2017
-base.0=/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+#Sat Feb 18 13:28:24 IST 2017
+base.0=/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
-file.0=/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+file.0=/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

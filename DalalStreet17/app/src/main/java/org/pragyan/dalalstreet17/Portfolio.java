@@ -21,16 +21,17 @@ import java.util.ArrayList;
 public class Portfolio extends Fragment {
 
     ListView listView;
+    TextView name;
 
     ArrayList<String> stock_details;
 
-    TextView money,stock,total;
-    int money_cash,money_stock,money_total,stock_github,stock_apple,stock_yahoo,stock_hdfc,stock_lg,stock_sony,stock_infosys;
+    String userName;
+    int stock_github,stock_apple,stock_yahoo,stock_hdfc,stock_lg,stock_sony,stock_infosys;
     int github_value,apple_value,yahoo_value,hdfc_value,lg_value,sony_value,infosys_value;
 
     public Portfolio() {
         // Required empty public constructor
-        money_cash=1000; //hardcoded
+
 
         stock_github=3; //hardcoded
         stock_apple=5; //hardcoded
@@ -49,8 +50,6 @@ public class Portfolio extends Fragment {
         infosys_value=55; //hardcoded
 
 
-        money_stock=(stock_github*github_value)+(stock_apple*apple_value)+(stock_yahoo*yahoo_value)+(stock_hdfc*hdfc_value)+(stock_lg*lg_value)+(stock_sony*sony_value)+(stock_infosys*infosys_value);
-        money_total=money_stock+money_cash;
 
     }
 
@@ -63,17 +62,11 @@ public class Portfolio extends Fragment {
 
         getActivity().setTitle("Portfolio");
 
-        money=(TextView)rootView.findViewById(R.id.money);
-        stock=(TextView)rootView.findViewById(R.id.stock_wealth);
-        total=(TextView)rootView.findViewById(R.id.total);
+        userName="username";
+        name=(TextView)rootView.findViewById(R.id.user_name);
+        name.setText("Username : "+userName);
 
-
-        money.setText("Money available : "+money_cash);
-        stock.setText("Wealth through stocks : "+money_stock);
-        total.setText("Total wealth : "+money_total);
-
-
-        listView=(ListView)rootView.findViewById(R.id.stock_details_listview);
+        listView=(ListView)rootView.findViewById(R.id.stock_list);
         stock_details=new ArrayList<String>();
         stock_details.add("Github : "+stock_github+" ("+github_value+" per stock)");
         stock_details.add("Apple : "+stock_apple+" ("+apple_value+" per stock)");

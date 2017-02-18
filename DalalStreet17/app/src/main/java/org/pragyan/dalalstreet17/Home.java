@@ -84,11 +84,6 @@ public class Home extends AppCompatActivity
         String stockText="Stock worth\n"+String.valueOf(stockWorth);
         String cashText="Cash worth\n"+String.valueOf(cashWorth);
         String totalText="Total worth\n"+String.valueOf(totalWorth);
-/*
-        stock.setText(stockText);
-        cash.setText(cashText);
-        total.setText(totalText);
-        */
 
 
         SpannableString spannable1=new SpannableString(stockText);

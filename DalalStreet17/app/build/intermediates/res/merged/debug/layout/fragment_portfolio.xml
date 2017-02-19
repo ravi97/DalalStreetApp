@@ -11,37 +11,14 @@
             android:layout_height="match_parent">
 
 
-            <TextView
-                android:text="Player profile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="15dp"
-                android:textSize="35sp"
-                android:id="@+id/player_profile" />
-
-            <TextView
-                android:text="Username : "
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/player_profile"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginLeft="20dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:textSize="20sp"
-                android:id="@+id/user_name" />
 
             <TextView
                 android:text="Stock details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/user_name"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:textSize="25sp"
+                android:textSize="35sp"
                 android:id="@+id/stock_details" />
 
             <ListView

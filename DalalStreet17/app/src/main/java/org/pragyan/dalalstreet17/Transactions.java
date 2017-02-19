@@ -53,11 +53,11 @@ public class Transactions extends Fragment {
         transactionList=new ArrayList<TransactionDetails>();
         transactionList.clear();
 
-        transactionList.add(new TransactionDetails("10:00","Mortgage","Github",50,43));
-        transactionList.add(new TransactionDetails("11:00","Exchange","Github",50,43));
-        transactionList.add(new TransactionDetails("12:00","Mortgage","Github",50,43));
-        transactionList.add(new TransactionDetails("12:01","Market","Github",50,43));
-        transactionList.add(new TransactionDetails("12:02","Exchange","Github",50,43));
+        transactionList.add(new TransactionDetails("Mortgage","Github",50,43,"10:00",-100));
+        transactionList.add(new TransactionDetails("Exchange","Github",50,43,"11:00",+50));
+        transactionList.add(new TransactionDetails("Mortgage","Github",50,43,"12:00",-25));
+        transactionList.add(new TransactionDetails("Market","Github",50,43,"12:01",+58));
+        transactionList.add(new TransactionDetails("Exchange","Github",50,43,"12:02",+75));
 
     }
 

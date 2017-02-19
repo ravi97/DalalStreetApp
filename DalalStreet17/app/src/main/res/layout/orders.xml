@@ -71,7 +71,7 @@
 
     <com.github.mikephil.charting.charts.PieChart
         android:layout_width="wrap_content"
-        android:layout_height="400dp"
+        android:layout_height="300dp"
         android:layout_below="@+id/order_status"
         android:id="@+id/piechart"
         />

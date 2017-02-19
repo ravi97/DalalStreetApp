@@ -8,16 +8,26 @@ public class TransactionDetails {
     private int noOfStocks;
     private float stockPrice;
     private String time;
+    private float totalMoney;
 
-    public TransactionDetails(String time, String type, String company, int noOfStocks, float stockPrice) {
-        this.time = time;
+    public TransactionDetails(String type, String company, int noOfStocks, float stockPrice, String time, float totalMoney) {
         this.type = type;
         this.company = company;
         this.noOfStocks = noOfStocks;
         this.stockPrice = stockPrice;
+        this.time = time;
+        this.totalMoney = totalMoney;
     }
 
     public TransactionDetails() {
+    }
+
+    public float getTotalMoney() {
+        return totalMoney;
+    }
+
+    public void setTotalMoney(float totalMoney) {
+        this.totalMoney = totalMoney;
     }
 
     public String getType() {

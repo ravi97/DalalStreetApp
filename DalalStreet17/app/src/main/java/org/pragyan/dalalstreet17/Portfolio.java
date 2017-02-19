@@ -21,11 +21,9 @@ import java.util.ArrayList;
 public class Portfolio extends Fragment {
 
     ListView listView;
-    TextView name;
 
     ArrayList<String> stock_details;
 
-    String userName;
     int stock_github,stock_apple,stock_yahoo,stock_hdfc,stock_lg,stock_sony,stock_infosys;
     int github_value,apple_value,yahoo_value,hdfc_value,lg_value,sony_value,infosys_value;
 
@@ -62,9 +60,6 @@ public class Portfolio extends Fragment {
 
         getActivity().setTitle("Portfolio");
 
-        userName="username";
-        name=(TextView)rootView.findViewById(R.id.user_name);
-        name.setText("Username : "+userName);
 
         listView=(ListView)rootView.findViewById(R.id.stock_list);
         stock_details=new ArrayList<String>();

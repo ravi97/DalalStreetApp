@@ -60,6 +60,7 @@ public class StockExchange extends Fragment {
         companySpinner=(MaterialBetterSpinner)rootView.findViewById(R.id.company_spinner_exchange);
         ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(getActivity(),android.R.layout.simple_dropdown_item_1line,getResources().getStringArray(R.array.companies));
         companySpinner.setAdapter(arrayAdapter);
+        companySpinner.setSelection(0);
 
         buy=(Button)rootView.findViewById(R.id.buy_exchange);
         stockValue=(TextView)rootView.findViewById(R.id.stock_price_current);

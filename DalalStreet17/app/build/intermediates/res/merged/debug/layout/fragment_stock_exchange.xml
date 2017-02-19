@@ -63,7 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:hint="number of stocks"
+                android:hint="Number of stocks"
                 android:ems="10"
                 android:id="@+id/stocks_exchange" />
         </android.support.design.widget.TextInputLayout>

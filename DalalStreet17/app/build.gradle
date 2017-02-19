@@ -33,4 +33,5 @@ dependencies {
     compile 'com.weiwangcn.betterspinner:library-material:1.1.0'
     testCompile 'junit:junit:4.12'
     compile 'org.quanqi:mpandroidchart:1.7.5'
+
 }

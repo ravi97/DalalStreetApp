@@ -37,7 +37,7 @@ public class CompanyAdapter extends RecyclerView.Adapter<CompanyAdapter.MyViewHo
     public void onBindViewHolder(MyViewHolder holder, int position) {
         Company company=companyList.get(position);
         holder.name.setText(company.getCompany_name());
-        holder.worth.setText("Stock value : "+company.getCompany_value());
+        holder.worth.setText("₹"+company.getCompany_value());
 
 
         Picasso.with(context).load(company.getCompany_image()).into(holder.company_image);

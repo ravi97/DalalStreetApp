@@ -83,6 +83,7 @@ MERGED from [com.android.support:support-core-utils:25.0.1] /media/ravi/data/cod
 MERGED from [com.android.support:animated-vector-drawable:25.0.1] /media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:25.0.1] /media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/AndroidManifest.xml:21:5-43
 MERGED from [com.android.support:support-compat:25.0.1] /media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/AndroidManifest.xml:21:5-23:58
+MERGED from [org.quanqi:mpandroidchart:1.7.5] /media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/org.quanqi/mpandroidchart/1.7.5/AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.0.1] /media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion

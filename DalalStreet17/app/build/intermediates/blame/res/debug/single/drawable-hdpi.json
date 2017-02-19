@@ -4,20 +4,20 @@
         "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-hdpi/ic_action_home.png"
     },
     {
-        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_action_portfolio.png",
-        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-hdpi/ic_action_portfolio.png"
-    },
-    {
         "merged": "/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_action_exchange.png",
         "source": "/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-hdpi/ic_action_exchange.png"
     },
     {
-        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_action_orders.png",
-        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-hdpi/ic_action_orders.png"
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_action_portfolio.png",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-hdpi/ic_action_portfolio.png"
     },
     {
         "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-hdpi/down_arrow.png",
         "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-hdpi/down_arrow.png"
+    },
+    {
+        "merged": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_action_orders.png",
+        "source": "/media/ravi/data/coding and development/dalal_street/DalalStreetApp/DalalStreet17/app/src/main/res/drawable-hdpi/ic_action_orders.png"
     },
     {
         "merged": "/media/ravi/data/coding and development/Android app dev/dalal_street/DalalStreetApp/DalalStreet17/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_action_performance.png",

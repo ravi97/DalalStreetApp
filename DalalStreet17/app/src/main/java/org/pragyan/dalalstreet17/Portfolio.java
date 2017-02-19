@@ -22,30 +22,12 @@ public class Portfolio extends Fragment {
 
     ListView listView;
 
-    ArrayList<String> stock_details;
-
-    int stock_github,stock_apple,stock_yahoo,stock_hdfc,stock_lg,stock_sony,stock_infosys;
-    int github_value,apple_value,yahoo_value,hdfc_value,lg_value,sony_value,infosys_value;
+    ArrayList<PortfolioValues> portfolioValues;
+    ArrayList<String> stockDetails;
 
     public Portfolio() {
         // Required empty public constructor
 
-
-        stock_github=3; //hardcoded
-        stock_apple=5; //hardcoded
-        stock_yahoo=7; //hardcoded
-        stock_hdfc=9; //hardcoded
-        stock_lg=12; //hardcoded
-        stock_sony=15; //hardcoded
-        stock_infosys=20; //hardcoded
-
-        github_value=50; //hardcoded
-        apple_value=40; //hardcoded
-        yahoo_value=30; //hardcoded
-        hdfc_value=60; //hardcoded
-        lg_value=70; //hardcoded
-        sony_value=45; //hardcoded
-        infosys_value=55; //hardcoded
 
 
 
@@ -62,23 +44,62 @@ public class Portfolio extends Fragment {
 
 
         listView=(ListView)rootView.findViewById(R.id.stock_list);
-        stock_details=new ArrayList<String>();
-        stock_details.add("Github : "+stock_github+" ("+github_value+" per stock)");
-        stock_details.add("Apple : "+stock_apple+" ("+apple_value+" per stock)");
-        stock_details.add("Yahoo : "+stock_yahoo+" ("+yahoo_value+" per stock)");
-        stock_details.add("HDFC : "+stock_hdfc+" ("+hdfc_value+" per stock)");
-        stock_details.add("LG : "+stock_lg+" ("+lg_value+" per stock)");
-        stock_details.add("Sony : "+stock_sony+" ("+sony_value+" per stock)");
-        stock_details.add("Infosys : "+stock_infosys+" ("+infosys_value+" per stock)");
 
-        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1,stock_details);
+        publish();
+
+        return rootView;
+    }
+
+    public void setValues(){
+          //todo : get from service
+
+
+        stockDetails=new ArrayList<>();
+        stockDetails.clear();
+        portfolioValues=new ArrayList<>();
+        portfolioValues.clear();
+        portfolioValues.add(new PortfolioValues("Github",30,20));
+        portfolioValues.add(new PortfolioValues("Apple",20,80));
+        portfolioValues.add(new PortfolioValues("Yahoo",45,100));
+        portfolioValues.add(new PortfolioValues("HDFC",30,20));
+        portfolioValues.add(new PortfolioValues("LG",15,60));
+        portfolioValues.add(new PortfolioValues("Sony",25,75));
+        portfolioValues.add(new PortfolioValues("Infosys",50,35));
+
+        for (int i=0;i<portfolioValues.size();i++){
+            stockDetails.add(portfolioValues.get(i).stock_details);
+        }
+
+
+
+    }
+
+    public void publish(){
+
+        setValues();
+        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1,stockDetails);
         listView.setAdapter(arrayAdapter);
 
 
+    }
 
+    public class PortfolioValues{
 
+        String company,stock_details;
+        int noOfStock,value;
 
-        return rootView;
+        public PortfolioValues(String company, int noOfStock, int value) {
+            this.company = company;
+            this.noOfStock = noOfStock;
+            this.value = value;
+
+            constructStockDetails();
+
+        }
+
+        public void constructStockDetails(){
+            stock_details=company+" : "+String.valueOf(noOfStock)+" ( ₹"+String.valueOf(value)+" per stock)";
+        }
     }
 
 }

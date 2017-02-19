@@ -68,9 +68,88 @@ public class CompanyProfile extends Fragment {
 
         bidBar=(BarChart)rootView.findViewById(R.id.bidChart);
         askBar=(BarChart)rootView.findViewById(R.id.askChart);
+        performance=(LineChart)rootView.findViewById(R.id.history);
+
+        publish();
+
+
+
+
+        return rootView;
+    }
+
+
+    public void addBidvalues(){
+        bidEntry=new ArrayList<>(); //todo : get from service
+        bidEntry.clear();
+        bidEntry.add(new BarEntry(30, 0)); //y axis (value,index)
+        bidEntry.add(new BarEntry(40, 1));
+        bidEntry.add(new BarEntry(50, 2));
+        bidEntry.add(new BarEntry(60, 3));
+        bidEntry.add(new BarEntry(70, 4));
+       // bidEntry.add(new BarEntry(80, 5));
+
+        bidEntryLabels=new ArrayList<>();
+        bidEntryLabels.clear();
+        bidEntryLabels.add("30"); //x axis labels
+        bidEntryLabels.add("40");
+        bidEntryLabels.add("50");
+        bidEntryLabels.add("60");
+        bidEntryLabels.add("70");
+        //bidEntryLabels.add("80");
+    }
+
+
+    public void addAskvalues(){
+        askEntry=new ArrayList<>();  //todo : get from service
+        askEntry.clear();
+        askEntry.add(new BarEntry(30, 0));
+        askEntry.add(new BarEntry(40, 1));
+        askEntry.add(new BarEntry(50, 2));
+        askEntry.add(new BarEntry(60, 3));
+        askEntry.add(new BarEntry(70, 4));
+     //   askEntry.add(new BarEntry(80, 5));
+
+        askEntryLabels=new ArrayList<>();
+        askEntryLabels.clear();
+        askEntryLabels.add("30");
+        askEntryLabels.add("40");
+        askEntryLabels.add("50");
+        askEntryLabels.add("60");
+        askEntryLabels.add("70");
+//        askEntryLabels.add("80");
+    }
+
+    public void addPerformanceValues(){
+        performanceEntries=new ArrayList<>(); //todo : get from service
+        performanceEntries.clear();
+        performanceEntries.add(new Entry(30f,0));
+        performanceEntries.add(new Entry(32f,1));
+        performanceEntries.add(new Entry(34f,2));
+        performanceEntries.add(new Entry(36f,3));
+        performanceEntries.add(new Entry(18f,4));
+
+        performanceLabels=new ArrayList<>();
+        performanceLabels.clear();
+        performanceLabels.add("12th");
+        performanceLabels.add("13th");
+        performanceLabels.add("14th");
+        performanceLabels.add("15th");
+        performanceLabels.add("16th");
+    }
+
+    public void setValues(){
 
         addBidvalues();
         addAskvalues();
+        addPerformanceValues();
+
+
+    }
+
+    public void publish(){
+
+        setValues();
 
         bidDataset=new BarDataSet(bidEntry,"Bid values");
         bidDataset.setColors(ColorTemplate.PASTEL_COLORS);
@@ -92,8 +171,6 @@ public class CompanyProfile extends Fragment {
         askBar.setData(askData);
         askBar.animateY(1000);
 
-        performance=(LineChart)rootView.findViewById(R.id.history);
-        addPerformanceValues();
         dataset=new LineDataSet(performanceEntries,"Company performance");
         dataset.setColor(ContextCompat.getColor(getActivity(),R.color.colorPrimary));
         dataset.setLineWidth(3);
@@ -106,62 +183,6 @@ public class CompanyProfile extends Fragment {
         performance.setData(performanceData);
 
 
-
-        return rootView;
-    }
-
-
-    public void addBidvalues(){
-        bidEntry=new ArrayList<>();
-        bidEntry.add(new BarEntry(30, 0));
-        bidEntry.add(new BarEntry(40, 1));
-        bidEntry.add(new BarEntry(50, 2));
-        bidEntry.add(new BarEntry(60, 3));
-        bidEntry.add(new BarEntry(70, 4));
-       // bidEntry.add(new BarEntry(80, 5));
-
-        bidEntryLabels=new ArrayList<>();
-        bidEntryLabels.add("30");
-        bidEntryLabels.add("40");
-        bidEntryLabels.add("50");
-        bidEntryLabels.add("60");
-        bidEntryLabels.add("70");
-        //bidEntryLabels.add("80");
-    }
-
-
-    public void addAskvalues(){
-        askEntry=new ArrayList<>();
-        askEntry.add(new BarEntry(30, 0));
-        askEntry.add(new BarEntry(40, 1));
-        askEntry.add(new BarEntry(50, 2));
-        askEntry.add(new BarEntry(60, 3));
-        askEntry.add(new BarEntry(70, 4));
-     //   askEntry.add(new BarEntry(80, 5));
-
-        askEntryLabels=new ArrayList<>();
-        askEntryLabels.add("30");
-        askEntryLabels.add("40");
-        askEntryLabels.add("50");
-        askEntryLabels.add("60");
-        askEntryLabels.add("70");
-//        askEntryLabels.add("80");
-    }
-
-    public void addPerformanceValues(){
-        performanceEntries=new ArrayList<>();
-        performanceEntries.add(new Entry(30f,0));
-        performanceEntries.add(new Entry(32f,1));
-        performanceEntries.add(new Entry(34f,2));
-        performanceEntries.add(new Entry(36f,3));
-        performanceEntries.add(new Entry(18f,4));
-
-        performanceLabels=new ArrayList<>();
-        performanceLabels.add("12th");
-        performanceLabels.add("13th");
-        performanceLabels.add("14th");
-        performanceLabels.add("15th");
-        performanceLabels.add("16th");
     }
 
 }

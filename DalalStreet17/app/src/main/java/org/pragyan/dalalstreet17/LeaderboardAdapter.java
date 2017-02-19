@@ -1,6 +1,7 @@
 package org.pragyan.dalalstreet17;
 
 import android.content.Context;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,54 +14,47 @@ import java.util.ArrayList;
  * Created by ravi on 11/2/17.
  */
 
-public class LeaderboardAdapter extends BaseAdapter {
+public class LeaderboardAdapter extends RecyclerView.Adapter<LeaderboardAdapter.MyViewHolder>{
 
     ArrayList<LeaderboardDetails> leaderboardDetails;
     Context context;
-    LayoutInflater inflater=null;
 
     public LeaderboardAdapter(ArrayList<LeaderboardDetails> leaderboardDetails, Context context) {
         this.leaderboardDetails = leaderboardDetails;
         this.context = context;
-        inflater=(LayoutInflater)context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
-    public int getCount() {
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View itemView = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.leaderboard_list, parent, false);
+
+        return new LeaderboardAdapter.MyViewHolder(itemView);
+    }
+
+    @Override
+    public void onBindViewHolder(MyViewHolder holder, int position) {
+
+        LeaderboardDetails details=leaderboardDetails.get(position);
+        holder.rank.setText(String.valueOf(details.getRank()));
+        holder.name.setText(details.getName());
+        holder.wealth.setText(String.valueOf(details.getTotal_wealth()));
+    }
+
+    @Override
+    public int getItemCount() {
         return leaderboardDetails.size();
     }
 
-    @Override
-    public Object getItem(int i) {
-        return leaderboardDetails.get(i);
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        public TextView rank,name,wealth;
+
+        public MyViewHolder(View view) {
+            super(view);
+            rank=(TextView)view.findViewById(R.id.rank_list);
+            name=(TextView)view.findViewById(R.id.name_list);
+            wealth=(TextView)view.findViewById(R.id.wealth_list);
+        }
     }
 
-    @Override
-    public long getItemId(int i) {
-        return i;
-    }
-
-    public class RowData{
-        TextView rank;
-        TextView name;
-        TextView wealth;
-    }
-
-    @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-        RowData data=new RowData();
-        View rowView;
-        rowView=inflater.inflate(R.layout.leaderboard_list,null);
-
-        data.name=(TextView)rowView.findViewById(R.id.name_list);
-        data.name.setText(leaderboardDetails.get(i).getName());
-        data.rank=(TextView)rowView.findViewById(R.id.rank_list);
-        data.rank.setText(String.valueOf(leaderboardDetails.get(i).getRank()));
-        data.wealth=(TextView)rowView.findViewById(R.id.wealth_list);
-        data.wealth.setText(String.valueOf(leaderboardDetails.get(i).getTotal_wealth()));
-
-
-
-        return rowView;
-    }
 }

@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
@@ -28,7 +29,7 @@ public class BuySell extends Fragment {
     TextInputLayout noOfStocksInput,orderPriceInput;
     EditText noOfStocks,orderPrice;
     Button bidOrAsk;
-
+    ProgressBar progressBar;
 
     public BuySell() {
         // Required empty public constructor
@@ -52,16 +53,16 @@ public class BuySell extends Fragment {
 
 
         bidOrAsk=(Button)rootView.findViewById(R.id.bid_ask);
-
         noOfStocks=(EditText)rootView.findViewById(R.id.no_of_stocks);
         orderPrice=(EditText)rootView.findViewById(R.id.order_price);
-
         noOfStocksInput=(TextInputLayout)rootView.findViewById(R.id.no_of_stocks_input);
         orderPriceInput=(TextInputLayout)rootView.findViewById(R.id.order_price_input);
-
-
         defultButton=(RadioButton)rootView.findViewById(R.id.radioButton_bid);
+        progressBar=(ProgressBar)rootView.findViewById(R.id.progressBar);
+
+        progressBar.setVisibility(View.INVISIBLE);
         defultButton.setChecked(true);
+
 
         defultButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -76,9 +77,6 @@ public class BuySell extends Fragment {
             }
         });
 
-
-
-
         orderSpinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -92,8 +90,6 @@ public class BuySell extends Fragment {
                 }
             }
         });
-
-
 
         bidOrAsk.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,6 +115,9 @@ public class BuySell extends Fragment {
                 else{
                     orderPriceInput.setErrorEnabled(false);
                     noOfStocksInput.setErrorEnabled(false);
+                    progressBar.setVisibility(View.VISIBLE);
+                    addtransaction();
+                    progressBar.setVisibility(View.INVISIBLE);
                     Toast.makeText(getActivity(), "transaction added", Toast.LENGTH_SHORT).show();
                 }
 
@@ -127,6 +126,10 @@ public class BuySell extends Fragment {
         });
 
         return rootView;
+    }
+
+    public void addtransaction(){
+        //todo : add transaction
     }
 
 }

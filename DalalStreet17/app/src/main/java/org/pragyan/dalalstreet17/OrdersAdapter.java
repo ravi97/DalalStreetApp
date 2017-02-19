@@ -95,19 +95,6 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.MyViewHold
 
         ArrayList<Integer> colors = new ArrayList<Integer>();
 
-/*        for (int c : ColorTemplate.VORDIPLOM_COLORS)
-             colors.add(c);
-
-        for (int c : ColorTemplate.JOYFUL_COLORS)
-            colors.add(c);
-
-        for (int c : ColorTemplate.LIBERTY_COLORS)
-            colors.add(c);
-
-        for (int c : ColorTemplate.PASTEL_COLORS)
-            colors.add(c);*/
-
-
         colors.add(ContextCompat.getColor(context,android.R.color.darker_gray));
         for (int c : ColorTemplate.COLORFUL_COLORS)
             colors.add(c);

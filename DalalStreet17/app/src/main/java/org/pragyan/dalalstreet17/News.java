@@ -40,21 +40,17 @@ public class News extends Fragment {
         getActivity().setTitle("News");
 
         recyclerView=(RecyclerView)rootView.findViewById(R.id.news_view);
-        prepareNews();
-        adapter=new NewsAdapter(getActivity(),newsList);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.VERTICAL,false));
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(adapter);
 
+        publish();
 
         return rootView;
     }
 
     public void prepareNews(){
-        newsList=new ArrayList<>();
+        newsList=new ArrayList<>();  //todo : get from service
         newsList.clear();
 
-        newsList.add(new NewsDetails("aaaaa","aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"));
+        newsList.add(new NewsDetails("aaaaa","aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")); //headlines,article
         newsList.add(new NewsDetails("bbbbb","bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"));
         newsList.add(new NewsDetails("ccccc","aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"));
         newsList.add(new NewsDetails("ddddd","aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"));
@@ -64,6 +60,22 @@ public class News extends Fragment {
         newsList.add(new NewsDetails("hhhhh","aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"));
         newsList.add(new NewsDetails("iiiii","aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"));
         newsList.add(new NewsDetails("jjjjj","aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"));
+    }
+
+    public void setValues(){
+
+        prepareNews();
+
+    }
+
+    public void publish(){
+        setValues();
+
+        adapter=new NewsAdapter(getActivity(),newsList);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.VERTICAL,false));
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setAdapter(adapter);
+
     }
 
 }

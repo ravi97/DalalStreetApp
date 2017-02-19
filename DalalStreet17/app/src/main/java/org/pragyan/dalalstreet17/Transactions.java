@@ -39,25 +39,34 @@ public class Transactions extends Fragment {
         getActivity().setTitle("Transactions");
 
         transactionView=(RecyclerView)rootView.findViewById(R.id.transactions_view);
-        prepareTransactions();
-        adapter=new TransactionAdapter(getActivity(),transactionList);
-        transactionView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.VERTICAL,false));
-        transactionView.setItemAnimator(new DefaultItemAnimator());
-        transactionView.setAdapter(adapter);
+
+        publish();
 
         return rootView;
     }
 
 
-    public void prepareTransactions(){
-        transactionList=new ArrayList<TransactionDetails>();
-        transactionList.clear();
+
+    public void setValues(){
+
+
+        transactionList=new ArrayList<TransactionDetails>(); //todo : get from service
+        transactionList.clear();                   //type,company,number of stocks,stock price,timestamp,total amount
 
         transactionList.add(new TransactionDetails("Mortgage","Github",50,43,"10:00",-100));
         transactionList.add(new TransactionDetails("Exchange","Github",50,43,"11:00",+50));
         transactionList.add(new TransactionDetails("Mortgage","Github",50,43,"12:00",-25));
         transactionList.add(new TransactionDetails("Market","Github",50,43,"12:01",+58));
         transactionList.add(new TransactionDetails("Exchange","Github",50,43,"12:02",+75));
+    }
+
+    public void publish(){
+        setValues();
+        adapter=new TransactionAdapter(getActivity(),transactionList);
+        transactionView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.VERTICAL,false));
+        transactionView.setItemAnimator(new DefaultItemAnimator());
+        transactionView.setAdapter(adapter);
+
 
     }
 

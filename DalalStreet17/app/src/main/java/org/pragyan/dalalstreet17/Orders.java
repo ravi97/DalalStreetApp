@@ -26,11 +26,11 @@ public class Orders {
     private String company;
     private String status;
 
-    private int[] noOfStocks;
+    private Integer[] noOfStocks;
     private String[] price;
 
 
-    public Orders(Context context, String orderType, boolean bid, int orderPrice, String company, String status, int[] noOfStocks, String[] price) {
+    public Orders(Context context, String orderType, boolean bid, int orderPrice, String company, String status, Integer[] noOfStocks, String[] price) {
         this.context = context;
         this.orderType = orderType;
         this.bid = bid;
@@ -95,11 +95,11 @@ public class Orders {
     }
 
 
-    public int[] getNoOfStocks() {
+    public Integer[] getNoOfStocks() {
         return noOfStocks;
     }
 
-    public void setNoOfStocks(int[] noOfStocks) {
+    public void setNoOfStocks(Integer[] noOfStocks) {
         this.noOfStocks = noOfStocks;
     }
 

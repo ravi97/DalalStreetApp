@@ -40,7 +40,7 @@ public class CompanyAdapter extends RecyclerView.Adapter<CompanyAdapter.MyViewHo
         holder.worth.setText("₹"+company.getCompany_value());
 
 
-        Picasso.with(context).load(company.getCompany_image()).into(holder.company_image);
+        Picasso.with(context).load(company.getCompany_image()).into(holder.company_image); //todo : change load to loadfromurl
         Picasso.with(context).load(company.getCompany_status()).into(holder.status);
 
     }

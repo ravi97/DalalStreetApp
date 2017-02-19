@@ -38,8 +38,6 @@ public class Mortgage extends Fragment {
 
     public Mortgage() {
         // Required empty public constructor
-        stocks_owned=30;     //hardcoded
-        stocks_mortgaged=45; //hardcoded
 
     }
 
@@ -59,9 +57,7 @@ public class Mortgage extends Fragment {
         stock_input=(TextInputLayout)rootView.findViewById(R.id.mortgage_stock_input);
 
         owned=(TextView)rootView.findViewById(R.id.stocks_owned);
-        owned.setText("Number of stocks you own : "+String.valueOf(stocks_owned));
         mortgaged=(TextView)rootView.findViewById(R.id.stocks_mortgaged);
-        mortgaged.setText("Number of stocks in mortgage : "+String.valueOf(stocks_mortgaged));
 
 
 
@@ -90,7 +86,7 @@ public class Mortgage extends Fragment {
                         if(defaultButton.isChecked()){
 
                             if(stock_transaction<=stocks_owned) {
-                                stocks_owned -= stock_transaction;
+                                stocks_owned -= stock_transaction; //todo : update in service
                                 stocks_mortgaged += stock_transaction;
 
                                 owned.setText("Number of stocks you own : "+String.valueOf(stocks_owned));
@@ -104,8 +100,8 @@ public class Mortgage extends Fragment {
                         }
                         else {
 
-                            if(stock_transaction>=stocks_mortgaged) {
-                                stocks_owned += stock_transaction;
+                            if(stock_transaction<=stocks_mortgaged&&stocks_mortgaged>=0) {
+                                stocks_owned += stock_transaction;   //todo : update in service
                                 stocks_mortgaged -= stock_transaction;
 
                                 stocks.setText("");
@@ -122,7 +118,25 @@ public class Mortgage extends Fragment {
             }
         });
 
+        publish();
+
         return rootView;
+    }
+
+    public void setValues(){
+
+        stocks_owned=30;            //todo : get from service
+        stocks_mortgaged=45;
+
+    }
+
+    public void publish(){
+        setValues();
+
+        owned.setText("Number of stocks you own : "+String.valueOf(stocks_owned));
+        mortgaged.setText("Number of stocks in mortgage : "+String.valueOf(stocks_mortgaged));
+
+
     }
 
 }

@@ -3,6 +3,9 @@ package org.pragyan.dalalstreet17;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +20,7 @@ import java.util.ArrayList;
  */
 public class Leaderboard extends Fragment {
 
-    ListView listView;
+    RecyclerView recyclerView;
     ArrayList<LeaderboardDetails> details;
     LeaderboardAdapter leaderboardAdapter;
 
@@ -37,24 +40,20 @@ public class Leaderboard extends Fragment {
         View rootView=inflater.inflate(R.layout.fragment_leaderboard, container, false);
         getActivity().setTitle("Leaderboard");
 
-        listView=(ListView) rootView.findViewById(R.id.leaderboard_display);
-        populateLeaderboard();
-        leaderboardAdapter=new LeaderboardAdapter(details,getActivity());
-        listView.setAdapter(leaderboardAdapter);
-
+        recyclerView=(RecyclerView) rootView.findViewById(R.id.leaderboard_display);
         name=(TextView)rootView.findViewById(R.id.name_list);
         rank=(TextView)rootView.findViewById(R.id.rank_list);
         wealth=(TextView)rootView.findViewById(R.id.wealth_list);
-        name.setText("your name");
-        rank.setText("8");
-        wealth.setText("3500");
+
+        publish();
 
         return rootView;
     }
 
-    public void populateLeaderboard(){
-        details=new ArrayList<>();
 
+    public void setValues(){
+        details=new ArrayList<>(); //todo : get from service
+                                    //position,name,total wealth
         details.add(new LeaderboardDetails(1,"aaa",5000));
         details.add(new LeaderboardDetails(2,"bbb",4500));
         details.add(new LeaderboardDetails(3,"ccc",4400));
@@ -68,6 +67,22 @@ public class Leaderboard extends Fragment {
 
 
 
+
+    }
+
+    public void publish(){
+        setValues();
+
+        leaderboardAdapter=new LeaderboardAdapter(details,getActivity());
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.VERTICAL,false));
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setAdapter(leaderboardAdapter);
+
+
+        name.setText("your name");  //todo : add our details
+        rank.setText("8");
+        wealth.setText("3500");
 
     }
 

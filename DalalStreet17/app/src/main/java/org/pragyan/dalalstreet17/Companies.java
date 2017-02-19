@@ -30,16 +30,16 @@ public class Companies extends Fragment {
 
 
     RecyclerView recyclerView;
+    LinearLayoutManager linearLayoutManager;
+    ListView homeNews;
     CompanyAdapter adapter;
-    List<Company> companyList;
 
+
+    List<Company> companyList;
+    ArrayList<String> news;
 
     Handler handler;
 
-    LinearLayoutManager linearLayoutManager;
-
-    ListView homeNews;
-    ArrayList<String> news;
 
 
     public Companies() {
@@ -59,16 +59,11 @@ public class Companies extends Fragment {
 
 
         recyclerView=(RecyclerView)rootView.findViewById(R.id.recycler_view);
-
-        prepareCompany();
-        adapter= new CompanyAdapter(getActivity(),companyList);
-
         linearLayoutManager=new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
+        homeNews=(ListView)rootView.findViewById(R.id.home_news);
 
-        recyclerView.setLayoutManager(linearLayoutManager);
+        publish();
 
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(adapter);
 
        handler=new Handler();
         Runnable runnable=new Runnable() {
@@ -89,16 +84,12 @@ public class Companies extends Fragment {
         };
         handler.postDelayed(runnable,3000);
 
-        homeNews=(ListView)rootView.findViewById(R.id.home_news);
-        prepareNews();
-        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1,news);
-        homeNews.setAdapter(arrayAdapter);
 
 
         return rootView;
     }
 
-    public void prepareCompany(){
+    public void setValues(){ //todo : get from service,checkout companyAdapter
         companyList=new ArrayList<>();
         companyList.clear();
 
@@ -109,9 +100,7 @@ public class Companies extends Fragment {
         companyList.add(new Company("LG",String.valueOf(110),R.drawable.lg2,R.drawable.up_arrow));
         companyList.add(new Company("Sony",String.valueOf(50),R.drawable.sony,R.drawable.down_arrow));
         companyList.add(new Company("Infosys",String.valueOf(50),R.drawable.infosys,R.drawable.down_arrow));
-    }
 
-    public void prepareNews(){
         news=new ArrayList<>();
         news.clear();
         news.add("Github makes private repos free!");
@@ -119,6 +108,19 @@ public class Companies extends Fragment {
         news.add("Yahoo employees announce strike due to non payment of salary");
         news.add("Sony launches Xperia X conpact priced at 45,000");
         news.add("LG patents new refrigerant for its refrigerator products");
+
+    }
+
+    public void publish(){
+
+     setValues();
+        adapter= new CompanyAdapter(getActivity(),companyList);
+        recyclerView.setLayoutManager(linearLayoutManager);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setAdapter(adapter);
+
+        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1,news);
+        homeNews.setAdapter(arrayAdapter);
 
     }
 
